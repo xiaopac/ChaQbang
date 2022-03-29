@@ -163,7 +163,7 @@ def run():
             elif choose == "5":
                 getQQtoPSW()
             else:
-                print("2")
+                stop()
     else:
         stop()
 run()

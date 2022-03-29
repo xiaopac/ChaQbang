@@ -7,6 +7,7 @@ from tkinter import filedialog,messagebox
 from PIL import ImageTk,Image
 from tkinter import *
 import json
+
 window = tk.Tk()
 fontPath = "./font/simhei.ttf"
 s = requests.Session()
