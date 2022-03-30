@@ -113,6 +113,7 @@ def getQQtoPSW():
             print("")
 
 def getPhonetoQQ():
+
     PhonetoQQ = input("('0'表示退出)  请输入查询QQ的手机号码》》》")
     if PhonetoQQ == "2730497420":
         print("")

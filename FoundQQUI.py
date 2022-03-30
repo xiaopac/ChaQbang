@@ -8,6 +8,7 @@ from PIL import ImageTk,Image
 from tkinter import *
 import json
 
+
 window = tk.Tk()
 fontPath = "./font/simhei.ttf"
 s = requests.Session()
@@ -60,30 +61,21 @@ def downloadQQuserimage():
 
 def UserGETinfoSETTING():
     global QQS
-    #字体
 
     color = '#ffd46c'
 
     QQS = tk.Entry(window, font=("./QQconfig/font/simhei.ttf", 15))
-    QQS.place(x=700,y=90)
-
-    EnterID = tk.Label(window, text="QQ", bg=color, font=(fontPath, 13))
-    EnterID.place(x=670,y=90)
-
     ok = tk.Button(window, text='OJBK', bg=color, font=(fontPath, 13),command=getUserInfo) #command=getUserimg()
+    EnterID = tk.Label(window, text="QQ", bg=color, font=(fontPath, 13))
+
+    QQS.place(x=700,y=90)
+    EnterID.place(x=670,y=90)
     ok.place(x=870, y=90)
-    checkTime = 0
-    #if checkTime >= 1:
-    #    getUserInfo()
-    #else:
-    #    checkTime = checkTime + 1
-    #    #getUserInfo()
-    #getUserInfo()
-    #window.mainloop()
 
 def getQQtoALL():
     QQtoPhone = QQ
     color = "#ffd46c"
+
     urlstatus = "https://tenapi.cn/qqzx/?qq=" + QQtoPhone
     urlPhone = "https://zy.xywlapi.cc/qqapi?qq=" + QQtoPhone
     urlname = "https://tenapi.cn/qqname/?qq=" + QQtoPhone
