@@ -6,6 +6,7 @@ CQBVersion = "ChaQbang v1.0.0"
 color = "#ffd46c"
 window = tk.Tk()
 
+
 def FoundQQpy():
     import time
     import requests
