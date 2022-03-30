@@ -2,9 +2,10 @@ import os
 import tkinter as tk
 from tkinter import *
 
-CQBVersion = "CHAQBANG-v1.2.4"
+CQBVersion = "ChaQbang v1.0.0"
 color = "#ffd46c"
 window = tk.Tk()
+
 def FoundQQpy():
     import time
     import requests
@@ -16,7 +17,7 @@ def FoundQQpy():
         if status == "RUNNING":
             status = "STOP"
         print("")
-        print("CHAQBANG made by xiaopac")
+        print("ChaQbang made by xiaopac")
         print("两秒后关闭程序")
         time.sleep(2)
         sys.exit()
@@ -150,7 +151,7 @@ def FoundQQpy():
         if status == "RUNNING":
             print("star to running....")
             print("")
-            print("CHAQBANG made by xiaopac    ")
+            print("ChaQbang made by xiaopac    ")
             print("==========请输入您要查询的信息===========")
             print("！！！！输入0退出！！！！")
             print(" QQ号查询绑定手机: 1")
@@ -358,8 +359,6 @@ def FoundQQUIpy():
         UserGETinfoSETTING()
 
         window.mainloop()
-
-    CQBVersion = "CHAQBANG-v1.2.4"
 
     # 主函数，运行
     def runmain():
