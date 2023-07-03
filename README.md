@@ -9,4 +9,3 @@ pip install tk
 
 pip install resqusets
 
-切勿用于非法用途
